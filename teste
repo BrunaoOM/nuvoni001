@@ -1,1 +1,85 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
 
+	int main(){
+	
+	int n=0,i=0;
+	char registronomes[100];//coleta de nome
+	float registrotempo[10];//nao consegui utilizar
+	int atividade;//nao consegui utilizar
+	int log=0;
+	
+	setlocale(LC_ALL, "Portuguese_Brazil.1252");	//setando idioma portugues
+	printf("Insira seu nome para continuar\n");		
+	gets(registronomes);//coleta de nome
+	printf("Logado como: %s\n",&registronomes);//mostra o nome no qual voce digitou 
+
+	printf("Selecione a atividade desejada!\n");
+	printf("\n\n Menu de atividades:\n|Pagina Inicial - 1 | Forum - 2 | Not�cias - 3 | Contato - 4 | Entrar-Logout - 5|\n");
+	scanf("%d",&n);
+	
+	for(int i=6;i!=0;i++){//for para menu de atividades 
+		if(n==1){//menu de inicio
+			printf("Voc� foi redirecionado para a pagina inicial.\n");
+			printf("\n\nBem vindo, aqui voc� pode encontrar diversas noticias e novidades sobre a tecnologia.\n\n");
+			printf("Para entrar na aba de notic�as digite 1.\nPara voltar ate a p�gina anterior digite 2\n");
+			scanf("%d",&i);
+				if(i==1){
+			printf("Voc� foi redirecionado para as not�cias di�rias.\n");
+			printf("\nNvidia diminui poder de minera��o das RTX 3080, 3070 e 3060 Ti\n\n");
+			printf("A Nvidia anunciou que reduziu pela metade o poder de minera��o de\nEthereum das novas placas de v�deo RTX 30.");
+			printf(" A mudan�a j� havia aparecido em documentos da companhia e afeta os modelos RTX 3080, RTX 3070 e RTX 3060 Ti.");
+			printf("\n\nPara continuar lendo a noticia acesse: tecmundo.com.br\n\n");
+				}
+	printf("\n\nSelecione a atividade desejada!\n");
+	printf("\n\n Menu de atividades:\n|Pagina Inicial - 1 | Forum - 2 | Not�cias - 3 | Contato - 4 | Entrar-Logout - 5|\n");
+	scanf("%d",&n);
+		}
+		
+	
+		if(n==2){//menu 2
+			printf("Voc� foi redirecionado para nosso f�rum.\n");
+			printf("Aqui voc� encontra todo o tipo de atividade da comunidade.\n\n");
+	printf("\nSelecione a atividade desejada!\n");
+	printf("\n\n Menu de atividades:\n|Pagina Inicial - 1 | Forum - 2 | Not�cias - 3 | Contato - 4 | Entrar-Logout - 5|\n");
+	scanf("%d",&n);
+		}
+		
+		
+		if(n==3){//menu 3
+			printf("Voc� foi redirecionado para as not�cias di�rias.\n");
+			printf("\nNvidia diminui poder de minera��o das RTX 3080, 3070 e 3060 Ti\n\n");
+			printf("A Nvidia anunciou que reduziu pela metade o poder de minera��o de\nEthereum das novas placas de v�deo RTX 30.");
+			printf(" A mudan�a j� havia aparecido em documentos da companhia e afeta os modelos RTX 3080, RTX 3070 e RTX 3060 Ti.");
+			printf("\n\nPara continuar lendo a noticia acesse: tecmundo.com.br\n\n");
+			
+	printf("\nSelecione a atividade desejada!\n");
+	printf("\n\n Menu de atividades:\n|Pagina Inicial - 1 | Forum - 2 | Not�cias - 3 | Contato - 4 | Entrar-Logout - 5|\n");
+	scanf("%d",&n);
+		}
+		
+		
+		if(n==4){//menu 4
+			printf("E-mail para contato: brunobender7@gmail.com | +55 (55) 9 9649-4336\n\n");
+	printf("\nSelecione a atividade desejada!\n");
+	printf("\n\n Menu de atividades:\n|Pagina Inicial - 1 | Forum - 2 | Not�cias - 3 | Contato - 4 | Entrar-Logout - 5|\n");
+	scanf("%d",&n);
+		}
+		
+		
+		if(n==5){//menu 5
+			printf("Para logar com outra conta digite |1| para sair, digite |0| no menu de atividades.\n");
+			scanf("%d",&i);
+				if(i==1){
+					printf("Insira seu novo nome de usu�rio.\n");
+					scanf("%s",&registronomes); //registra novo nome de usu�rio						
+					printf("\nAgora voc� esta logado como: %s\n",&registronomes); //mostra o novo nome registrado
+				}
+	printf("\nSelecione a atividade desejada!\n");
+	printf("\n\n Menu de atividades:\n|Pagina Inicial - 1 | Forum - 2 | Not�cias - 3 | Contato - 4 | Entrar-Logout - 5|\n");
+	scanf("%d",&n);
+		}
+	}
+	return 0;
+	}
